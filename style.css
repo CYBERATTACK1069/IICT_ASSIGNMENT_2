@@ -1,0 +1,260 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Baloo Bhai 2", sans-serif;
+  overflow-x: hidden;
+}
+
+.mainLogo {
+  height: 50px;
+  box-sizing: border-box;
+}
+header {
+  padding: 5px 15px;
+  margin: 10px;
+  box-sizing: border-box;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(250, 250, 250);
+  justify-content: space-between;
+  align-items: center;
+}
+ul {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  text-decoration: none;
+}
+a {
+  font-size: 18px;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+button {
+  font-size: 19px;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: black;
+  padding: 3px 25px;
+  background-color: transparent;
+  border: none;
+  border-top: 2px solid gray;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  height: auto;
+  overflow: hidden;
+  font-weight: 600;
+}
+button:hover {
+  background-color: rgb(235, 235, 235);
+  cursor: pointer;
+  border-radius: none;
+}
+main {
+  display: flex;
+  padding: 30px;
+  flex-direction: column;
+  margin: auto;
+  box-sizing: border-box;
+  width: 90vw;
+}
+.boldTxt {
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.sec1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+.txt {
+  font-size: 18px;
+  font-weight: 500;
+}
+.sec2 {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  /* height: 15vh; */
+  background-color: rgb(250, 250, 250);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  gap: 50px;
+  justify-content: space-evenly;
+}
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 28;
+  overflow: hidden;
+}
+.p1 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-evenly;
+  overflow: hidden;
+}
+.card {
+  margin: 5px;
+  width: 16vw;
+  /* height: 32vh; */
+  /* background-color: blue; */
+  padding: 10px;
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+  background-color: rgb(240, 240, 240);
+  margin: auto;
+  gap: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+}
+.productImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+.price {
+  font-weight: 700;
+  color: rgb(0, 201, 201);
+  font-size: 24px;
+}
+.prevPrice {
+  text-decoration: line-through;
+  color: gray;
+}
+.prices {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  width: fit-content;
+  margin: auto;
+  /* margin-top: 20px; */
+  width: auto;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+label {
+  text-transform: capitalize;
+  width: fit-content;
+}
+.Checkbox {
+  display: flex;
+  width: 100px;;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+}
+
+
+.lang:has(input[type="radio"]:checked) {
+  background-color: #a5d1ff;
+  border: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.lang input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.lang label {
+  display: block;
+  width: 100%;
+  padding: 5px 15px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
+}
+
+.lang:has(input[type="radio"]:checked) {
+  background-color: #a5d1ff;
+  border: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+select {
+  display: flex;
+  text-transform: capitalize;
+  padding: 5px 10px;
+  width: 100%;
+  justify-content: center;
+}
+.carsSec {
+  display: flex;
+  flex-direction: column;
+}
+select:focus,
+input:focus {
+  /* background-color: #a5d1ff; */
+  outline: none;
+}
+.ReviewSec {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+input {
+  height: fit-content;
+  padding: 5px 5px;
+  box-sizing: border-box;
+  padding-right: 35px;
+  border: 1px solid gray;
+  /* width: 100%; */
+}
+.inNames {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.inputField {
+  display: grid;
+  /* flex-direction: column; */
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-evenly;
+  width: 100%;
+  gap: 10px;
+  /* align-items: center; */
+}
+.reviewin {
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+  /* text-align: calc(top-0); */
+  font-size: 18px;
+  padding: 5px;
+  box-sizing: border-box;
+}
+textarea:focus {
+  outline: none;
+}
